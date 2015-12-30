@@ -248,7 +248,7 @@ then restarts sshd if needed.
       notify: Restart sshd
   handlers:
     - name: Restart sshd
-      service
+      service:
         name: ssh
         state: restarted
 ```
